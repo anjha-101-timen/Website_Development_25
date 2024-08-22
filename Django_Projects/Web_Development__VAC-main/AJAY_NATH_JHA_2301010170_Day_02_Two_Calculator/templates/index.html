@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        <label for="calculator">Basic Calculator</label>
+        <label for="numx">X :</label>
+        <input type="text" id="numx" name="numx" value="{{numa}}" required><br><br><br>
+        
+        <label for="operator">Operator :</label>
+        <div class="radio-buttons">
+            <input type="radio" id="power" name="operator" value="^"> <label for="power">^</label>
+            <input type="radio" id="add" name="operator" value="+"> <label for="add">+</label>
+            <input type="radio" id="subtract" name="operator" value="-"> <label for="subtract">-</label>
+            <input type="radio" id="product" name="operator" value="*"> <label for="product">*</label>
+            <input type="radio" id="divide" name="operator" value="/"> <label for="divide">/</label>
+            <input type="radio" id="remainder" name="operator" value="%"> <label for="remainder">%</label>
+        </div><br><br><br>
+        
+        <label for="numy">Y :</label>
+        <input type="text" id="numy" name="numy" value="{{numb}}" required><br><br>
+        
+        <input type="submit" value="Calculate"><br><br>
+        
+        <label for="result">Result =</label>
+        <input type="text" id="result" name="result" value="{{res}}" disabled><br><br>
+    </form>
+</body>
+</html>
+

@@ -1,0 +1,120 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anjha</title>
+    <link rel="stylesheet" href="{% static '/style.css' %}">
+</head>
+<body>
+
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-content">
+          <h1>A.N.Jha</h1>
+          <h2>An Engineering Student</h2>
+        </div>
+      </header>
+
+    <section id="hero">
+        <img src="{% static 'images/modin.jpg' %}" alt="Your Image"><br>
+        <b><h1>Hi, I'm AJAY NATH JHA</h1></b>
+        <p><h2><b>Welcome to my Personal Portfolio Website</b></h2></p>
+        <button>My Work</button>
+    </section>
+
+    <section id="about">
+        <b><h1>About Me</h1></b>
+        <p><h2><b>Let's Explore my Basic Skills & Hobbies</b></h2></p>
+        <br><br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Skills</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>CPP</li>
+                            <li>Python</li>
+                            <li>JAVA</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>6 months, Semester 2</li>
+                            <li>4 months, Semester 1</li>
+                            <li>6 months, Semester 3</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br><br>
+    </section>
+
+    <section id="portfolio">
+        <h2><b>Portfolio</b></h2>
+        <div class="project">
+            <img src="{% static 'images/modin.jpg' %}" alt="Project 1">
+            <h3>Project Title</h3>
+            <p><b>Project Description</b></p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>CPP</li>
+            <li>Python</li>
+            <li>JAVA</li>
+        </ul>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Watching Movies</li>
+            <li>Clicking Photographs</li>
+            <li>Keep Busy</li>
+            <li>Reading CS Books</li>
+            <li>Listening Music</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea><br><br>
+            <button type="submit"><b>Send</b></button><br><br>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; A.N.Jha</p>
+        <ul class="social-links">
+            <li><a href="https://www.youtube.com/@anjha.coditek">YouTube</a></li>
+            <br>
+            <li><a href="https://github.com/anjha-101-timen/">GitHub</a></li>
+            </ul>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Countdown Timer</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="countdown_container">
+
+            <h1>Event Countdown</h1>
+
+            <div id="countdown">
+                <div class="countdown_item">
+                    <span id="days"></span>
+                    <p>Days</p>
+                </div>
+
+                <div class="countdown_item">
+                    <span id="hours"></span>
+                    <p>Hours</p>
+                </div>
+
+                <div class="countdown_item">
+                    <span id="minutes"></span>
+                    <p>Minutes</p>
+                </div>
+
+                <div class="countdown_item">
+                    <span id="seconds"></span>
+                    <p>Seconds</p>
+                </div>
+
+            </div>
+        </div>
+
+        <form id="eventForm">
+
+            <label for="year">Year:</label>
+            <select id="year" name="year"></select>
+
+            <label for="month">Month:</label>
+            <select id="month" name="month"></select>
+
+            <label for="day">Day:</label>
+            <select id="day" name="day"></select>
+
+            <label for="hour">Hour:</label>
+            <select id="hour" name="hour"></select>
+
+            <label for="minute">Minute:</label>
+            <select id="minute" name="minute"></select>
+
+            <label for="second">Second:</label>
+            <select id="second" name="second"></select>
+            
+            <label for="ampm">AM/PM:</label>
+            <select id="ampm" name="ampm">
+                <option value="am">AM</option>
+                <option value="pm">PM</option>
+            </select>
+
+            <button type="submit">Set Event</button>
+
+        </form>
+
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
